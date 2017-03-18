@@ -1,8 +1,13 @@
+var path        = require('path'),
+    webpack     = require('webpack');
+
+
 module.exports = {
- entry: './index.ts',
+ entry: './src/server.ts',
  output: {
    filename: 'bundle.js',
-   path: __dirname
+   path: path.resolve(__dirname, 'dist'),
+   filename: '[name].js'
  },
  module: {
    rules: [
