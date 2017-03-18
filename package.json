@@ -1,0 +1,63 @@
+{
+  "name": "node-api-template",
+  "version": "0.1.0",
+  "description": "Template to use for future projects with Express webserver and MongoDb with Mongoose ORM.",
+  "main": "dist/server.js",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "tslint",
+    "server": "webpack --config webpack.config.js",
+    "start": "concurrently \"npm run lint\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rootsmj/node-api-template.git"
+  },
+  "keywords": [
+    "nodejs",
+    "handlebars",
+    "REST",
+    "HATEOAS",
+    "API",
+    "MongoDb"
+  ],
+  "author": "Martin Johansson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rootsmj/node-api-template/issues"
+  },
+  "homepage": "https://github.com/rootsmj/node-api-template#readme",
+  "dependencies": {
+    "body-parser": "1.17.1",
+    "csurf": "1.9.0",
+    "errorhandler": "1.5.0",
+    "express": "4.15.2",
+    "express-handlebars": "3.0.0",
+    "express-session": "1.15.1",
+    "handlebars": "4.0.6",
+    "handlebars-helpers": "0.8.0",
+    "handlebars-layouts": "3.1.4",
+    "hbs": "4.0.1",
+    "mongoose": "4.9.0",
+    "morgan": "1.8.1",
+    "serve-favicon": "2.4.1"
+  },
+  "devDependencies": {
+    "@types/core-js": "0.9.37",
+    "@types/express": "4.0.35",
+    "@types/mongoose": "4.7.8",
+    "@types/morgan": "1.7.32",
+    "@types/node": "7.0.8",
+    "@types/webpack": "2.2.11",
+    "concurrently": "3.4.0",
+    "del": "2.2.2",
+    "run-sequence": "1.2.2",
+    "source-map-loader": "^0.2.0",
+    "ts-loader": "^2.0.2",
+    "tslint": "4.5.1",
+    "typescript": "2.2.1",
+    "typings": "2.1.0",
+    "webpack": "2.2.1",
+    "webpack-visualizer-plugin": "0.1.11"
+  }
+}
