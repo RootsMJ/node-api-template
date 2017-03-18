@@ -13,7 +13,7 @@ const express       = require('express'),
     database        = require('./lib/database'),
     seeder          = require('./lib/dbSeeder'),
     app             = express(),
-    port            = 3000;
+    port            = 4000;
 
 
     /**
